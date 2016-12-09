@@ -5,7 +5,8 @@
 #  Copyright (c) 2015 Crashlytics. All rights reserved.
 
 #  Figure out where we're being called from
-DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+DIR=$( pwd )
 
 #  Quote path in case of spaces or special chars
 DIR="\"${DIR}"
